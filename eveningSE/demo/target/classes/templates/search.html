@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Поиск фильма</title>
+</head>
+<body>
+  <h1>Поиск фильма</h1>
+  <form method="POST" action="/search" th:action="@{/search}">
+    <label for="title">Название фильма:</label><br>
+    <input type="text" id="title" name="title"><br><br>
+    <input type="submit" value="Поиск">
+  </form>
+</body>
+</html>
